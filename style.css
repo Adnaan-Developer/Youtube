@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: Arial;
+}
+
+.navbar {
+    color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar a {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar i {
+    font-size: 20px;
+    display: flex;
+    color: white;
+    margin: 18px;
+}
+
+.navbar img {
+    margin: 10px 18px 15px; 
+    height: 160px;
+    max-width: 160px;
+}
+
+.search {
+    display: flex;
+}
+
+.navbar .search-in {
+    background-color: #121212;
+    height: 40px;
+    width: 535px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 10px 0px;
+    border: 1px solid #ffffff23;
+    border-right: none;
+}
+
+.search input {
+    padding: 10px;
+    color: gray;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+}
+
+.search-icon i {
+    margin: 10px 0;
+    background-color: #ffffff23;
+    height: 40px;
+    width: 65px;
+    align-items: center;
+    justify-content: space-around;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 24px;
+    border: 1px solid #ffffff23;
+    border-left: none;
+}
+
+.mic-logo i {
+    margin: 10px 0;
+    background-color: #ffffff23;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.create p {
+    margin: 10px 0;
+    background-color: #ffffff23;
+    height: 40px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.create i {
+    margin: 10px 0;
+    background-color: #ffffff23;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.bell i {
+    margin: 10px 0;
+    background-color: #ffffff23;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.user img {
+    margin: 10px 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; 
+}
