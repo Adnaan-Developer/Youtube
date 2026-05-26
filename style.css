@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
     font-family: Arial;
+}
+
+body {
+    background-color: black;
 }
 
 .navbar {
@@ -11,12 +14,20 @@
     height: 60px;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+}
+
+.side-1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .navbar a {
     display: flex;
-    justify-content: space-evenly;
     text-decoration: none;
     color: white;
 }
@@ -25,26 +36,43 @@
     font-size: 20px;
     display: flex;
     color: white;
-    margin: 18px;
+    margin: 18px 5px;
 }
 
-.navbar img {
-    margin: 10px 18px 15px; 
-    height: 160px;
-    max-width: 160px;
+.navbar .logo a {
+    height: 40px;
+    max-width: 125px;
+    width: 100%;
+}
+
+.bars a:hover {
+    background-color: white;
+    border-radius: 50%;
 }
 
 .search {
     display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.side-2 {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 15px;
+    margin: 0 20px;
+    max-width: 700px;
 }
 
 .navbar .search-in {
+    margin: 10px 0;
     background-color: #121212;
     height: 40px;
-    width: 535px;
+    max-width: 600px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    margin: 10px 0px;
     border: 1px solid #ffffff23;
     border-right: none;
 }
@@ -77,9 +105,16 @@
     height: 40px;
     width: 40px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     border-radius: 50%;
     font-size: 24px;
+    margin: 10px 0;
+}
+
+.side-3 {
+    display: flex;
+    gap: 15px;
+    
 }
 
 .create p {
@@ -113,7 +148,6 @@
 
 .bell i {
     margin: 10px 0;
-    background-color: #ffffff23;
     height: 40px;
     width: 40px;
     align-items: center;
@@ -127,4 +161,44 @@
     height: 40px;
     width: 40px;
     border-radius: 50%; 
+}
+
+.side-panel {
+    padding-top: 70px;
+    height: 100vh;
+    width: 65px;
+    /* border: 2px solid white; */
+    position: fixed;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-panel div {
+    height: 70px;
+}
+
+.side-panel div:hover {
+    border-radius: 15px;
+    background-color: #f1f1f11a;
+}
+
+.home i {
+    color: white;
+    padding: 20px 20px 5px;
+    font-size: 22px;
+}
+
+.side-panel a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.side-panel img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+    margin: 10px 20px 2px;
 }
