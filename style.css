@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: black;    
 }
 
 .navbar {
@@ -17,7 +17,16 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+}
+
+.top-header {
+    flex-direction: column;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 100;
 }
 
 .side-1 {
@@ -36,7 +45,6 @@ body {
     font-size: 20px;
     display: flex;
     color: white;
-    margin: 18px 5px;
 }
 
 .navbar .logo a {
@@ -45,8 +53,8 @@ body {
     width: 100%;
 }
 
-.bars a:hover {
-    background-color: white;
+.bars i:hover {
+    background-color: #575555f6;
     border-radius: 50%;
 }
 
@@ -58,15 +66,14 @@ body {
 
 .side-2 {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex: 1;
     gap: 15px;
-    margin: 0 20px;
     max-width: 700px;
 }
 
 .navbar .search-in {
-    margin: 10px 0;
     background-color: #121212;
     height: 40px;
     max-width: 600px;
@@ -77,19 +84,25 @@ body {
     border-right: none;
 }
 
+.navbar .search-in:focus-within {
+    border: 1px solid #1c64ffc2;
+}
+
 .search input {
     padding: 10px;
     color: gray;
     background-color: transparent;
     border: none;
     font-size: 15px;
+    outline: none;
+    width: 96%;
 }
 
 .search-icon i {
-    margin: 10px 0;
     background-color: #ffffff23;
     height: 40px;
     width: 65px;
+    display: flex;
     align-items: center;
     justify-content: space-around;
     border-top-right-radius: 20px;
@@ -100,7 +113,6 @@ body {
 }
 
 .mic-logo i {
-    margin: 10px 0;
     background-color: #ffffff23;
     height: 40px;
     width: 40px;
@@ -111,6 +123,10 @@ body {
     margin: 10px 0;
 }
 
+.mic-logo i:hover {
+    background-color: #575555f6;
+}
+
 .side-3 {
     display: flex;
     gap: 15px;
@@ -118,32 +134,28 @@ body {
 }
 
 .create p {
-    margin: 10px 0;
-    background-color: #ffffff23;
-    height: 40px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    font-size: 16px;
     padding-right: 10px;
 }
 
 .create i {
-    margin: 10px 0;
-    background-color: #ffffff23;
-    height: 40px;
-    width: 40px;
+    padding-left: 10px;
+}
+
+.create a {
+    gap: 10px;
+    margin: 10px 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     border-radius: 20px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    font-size: 20px;
-    padding-left: 5px;
+    font-size: 16px;
+    height: 40px;
+    overflow: hidden;
+    transition: 0.3s;
+    background-color: #ffffff23;
+}
+
+.create a:hover {
+    background-color: #575555f6;
 }
 
 .bell i {
@@ -154,6 +166,10 @@ body {
     justify-content: space-around;
     border-radius: 50%;
     font-size: 24px;
+}
+
+.bell i:hover {
+    background-color: #575555f6;
 }
 
 .user img {
@@ -201,4 +217,25 @@ body {
     height: 24px;
     filter: invert(1);
     margin: 10px 20px 2px;
+}
+
+.type-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    margin-left: 40px;
+    gap: 20px;
+    height: 56px;
+    width: 100%; 
+}
+
+.type-selector a {
+    background-color: #575555a1;
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
 }
